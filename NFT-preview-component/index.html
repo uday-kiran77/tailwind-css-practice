@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+      :root {
+        --Softblue: rgb(139, 172, 218);
+        --Cyan: hsl(178, 100%, 50%);
+        --Verydarkblue1: hsl(216, 54%, 11%);
+        --Verydarkblue2: hsl(214, 50%, 16%);
+        --Verydarkblue3: hsl(215, 32%, 27%);
+        --White: hsl(0, 0%, 100%);
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: var(--Verydarkblue1);
+      }
+      .card-bgc {
+        background-color: var(--Verydarkblue2);
+      }
+      .ether-blue {
+        color: var(--Cyan);
+      }
+      .softblue-color {
+        color: var(--Softblue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen">
+      <div class="flex flex-col w-11/12 max-w-xs p-5 rounded-lg card-bgc">
+        <img
+          src="./src/images/image-equilibrium.jpg"
+          alt=""
+          class="rounded-lg"
+        />
+
+        <h2 class="py-3 text-lg font-bold text-white">Equilibrium #3429</h2>
+        <p class="softblue-color text-s">
+          Our Equilibrium collection promotes balance and calm
+        </p>
+
+        <div class="flex flex-row justify-between py-4">
+          <div class="flex flex-row items-center">
+            <img src="./src/images/icon-ethereum.svg" alt="" />
+            <p class="mx-1 ether-blue">0.041 ETH</p>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <img src="./src/images/icon-clock.svg" alt="" />
+            <p class="mx-1 softblue-color">3 days left</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="flex flex-row items-center pt-2">
+          <img
+            src="./src/images/image-avatar.png"
+            alt=""
+            class="w-10 border border-white rounded-full"
+          />
+          <p class="mx-2">
+            <span class="softblue-color">Creation of</span>
+            <span class="text-white">Jules Wyvern</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="text-white text-center -mt-8 text-xs">
+      <a
+        href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"
+        target="_blank"
+        class="underline"
+        >Challenge By Frontend Mentor</a
+      >- Made with
+      <a href="#" class="bg-sky-700 p-1 rounded-md">Tailwind Css</a>
+    </footer>
+  </body>
+</html>
